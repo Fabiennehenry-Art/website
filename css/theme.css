@@ -1,4 +1,4 @@
-@import "css/font.css";
+@import "font.css";
 
 @layer theme {
    :root {
@@ -26,17 +26,8 @@
         --font-bold: 700;
 
     /* font-family */
-        --font-base: 'Montserrat';
-        --font-base-bold: 'Montserrat'; /* Utilise Montserrat 700 */
-        --font-primary: 'Arya';        /* Au lieu de Krub */
         --font-secondary: 'Updock';
-        --font-third: 'PoiretOne';
 
-        /* --font-base: 'Montserrat' ;
-        --font-base-bold: 'MontserratBold';
-        --font-primary: 'Krub';
-        --font-secondary: 'Updock' ;
-        --font-third: 'PoiretOne'; */
 
     /* margin */
         --m-xs: 0.25rem;

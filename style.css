@@ -37,7 +37,7 @@
             }
             p:first-of-type{
                 margin-top: var(--m-m);
-                font-family: var(--font-secondary);
+                font-family: "Updock";
                 font-size: clamp(2.7rem, 4.3vw, 4.3vw);
                 color:white;
                 text-shadow: 0px 0px 50px rgb(247, 228, 0);
