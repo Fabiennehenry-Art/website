@@ -26,7 +26,10 @@
         --font-bold: 700;
 
     /* font-family */
+        --font-base: 'Montserrat';
+        --font-primary: 'Arya';
         --font-secondary: 'Updock';
+        --font-third: 'PoiretOne';
 
 
     /* margin */
@@ -38,5 +41,8 @@
 
     /* line-height */
         --leading-lg: 1.4;
+
+    /* Limit mobile size */
+        --mobileSize: 1081px;
     }
 }

@@ -1,5 +1,29 @@
 @font-face {
+    font-family:"Montserrat";
+    src: url("../assets/fonts/montserrat-regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:"Montserrat";
+    src: url("../assets/fonts/montserrat-bold.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"Arya";
+    src: url("../assets/fonts/arya-regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
     font-family: "Updock";
     src: url("../assets/fonts/updock-regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:"PoiretOne";
+    src: url("../assets/fonts/poiret-one-regular.woff2");
     font-weight: 400;
 }
