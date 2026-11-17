@@ -12,9 +12,11 @@
     @keyframes nav-sticky{
         0% {
             color: transparent;
+            height: 0;
         }
-        20%{
+        10%{
             color: transparent;
+            height:0;
         }
         100% {
         }
@@ -56,29 +58,38 @@
     }
 
     @scope(main){
-        /* margin-top: var(--m-xl); */
         display: flex;
+        flex-direction:column;
         align-items: flex-start;
 
         @scope(nav) {
             position: sticky;
             top:0;
-            height: 100vh;
+            width:100%;/* height: 100vh; */
 
-            background-color: oklch(0% 0 0 / 0.9);
+            background-color: oklch(0% 0 0 / 0.8);
             backdrop-filter: blur(4px);
             z-index: 100;
             
             
             color: var(--color-primary);
             text-align: center;
-            width: 15%;
+            /* width: 15%; */
 
             animation: nav-sticky linear;
             animation-timeline: scroll();
             animation-range: 0vh 100vh;
+            ul {
+                display:flex;
+                justify-content: space-around;
+                font-family: var(--font-base);
+                font-weight: var(--font-bold);
+                li {
+                    font-size:var(--txt-lg);
+                }
+            }
 
-            @media (max-width: 1080px){
+            /* @media (max-width: 1080px){
                 width: 100%;
                 height: auto;
                 padding: 10px 0;
@@ -87,21 +98,22 @@
                     display: flex;
                     justify-content: space-around;
                 }
-            }
+            } */
         }
 
         @scope(section){
-                width: 50%;
+                width: 90%;
+                height:100vh;
                 margin: 0 auto;
 
-            @media (max-width: 1080px){
+            /* @media (max-width: 1080px){
                 width: 90%;
-            }
+            } */
         }
 
-        @media (max-width: 1080px){
+        /* @media (max-width: 1080px){
             flex-direction: column;
-        }
+        } */
     }
     
     @scope(h1, h2){
@@ -115,7 +127,7 @@
 
         p:last-child {
             font-family: var(--font-primary);
-            font-size: var(--txt-lg);
+            font-size: var(--txt-base);
             position: relative;
             transform: translateY(-1.3rem);
             letter-spacing: 0.5rem;
