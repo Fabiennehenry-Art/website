@@ -12,11 +12,12 @@
     @keyframes nav-sticky{
         0% {
             color: transparent;
-            height: 0;
+            transform:scaleY(0);
+            transform-origin: top;
         }
-        10%{
+        20%{
             color: transparent;
-            height:0;
+            transform:scaleY(0);
         }
         100% {
         }
@@ -127,7 +128,7 @@
 
         p:last-child {
             font-family: var(--font-primary);
-            font-size: var(--txt-base);
+            font-size: var(--txt-lg);
             position: relative;
             transform: translateY(-1.3rem);
             letter-spacing: 0.5rem;
